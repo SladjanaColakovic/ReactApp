@@ -1,0 +1,1 @@
+INSERT INTO public.users(role, address, name, password, username) VALUES (0, 'Nikole Pasica 10', 'Ana Bogdanovic', '$2a$10$gviA8hU/zQgelKwdWjCTEu7VNwcJ7VZWF9fLLmRjninubwnwZCa42', 'ana10');
