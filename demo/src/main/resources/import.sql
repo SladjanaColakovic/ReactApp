@@ -1,1 +1,4 @@
 INSERT INTO public.users(role, address, name, password, username) VALUES (0, 'Nikole Pasica 10', 'Ana Bogdanovic', '$2a$10$gviA8hU/zQgelKwdWjCTEu7VNwcJ7VZWF9fLLmRjninubwnwZCa42', 'ana10');
+INSERT INTO public.users(role, address, name, password, username) VALUES (1, 'Temerinska 10', 'Nikola Nikolic', '$2a$10$gviA8hU/zQgelKwdWjCTEu7VNwcJ7VZWF9fLLmRjninubwnwZCa42', 'nikola10');
+INSERT INTO public.users(role, address, name, password, username) VALUES (0, 'Branka Bajica 15', 'Marija Maric', '$2a$10$gviA8hU/zQgelKwdWjCTEu7VNwcJ7VZWF9fLLmRjninubwnwZCa42', 'marija10');
+INSERT INTO public.users(role, address, name, password, username) VALUES (0, 'Bulevar Evrope 63', 'Luka Lukic', '$2a$10$gviA8hU/zQgelKwdWjCTEu7VNwcJ7VZWF9fLLmRjninubwnwZCa42', 'luka10');

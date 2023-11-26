@@ -21,5 +21,11 @@ public class User {
     private String address;
     private Role role;
 
-
+    public User(String name, String username, String password, String address, Role role) {
+        this.name = name;
+        this.username = username;
+        this.password = password;
+        this.address = address;
+        this.role = role;
+    }
 }

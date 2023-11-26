@@ -1,8 +1,12 @@
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectUser } from "../auth/userSlice";
+
 const Navbar = () => {
 
     const navigate = useNavigate();
+    const user = useSelector(selectUser);
 
     const showRegistrationForm = () => {
         navigate('/', {replace: true});
@@ -14,8 +18,8 @@ const Navbar = () => {
 
     return (
         <ul>
-            <li><Button name={"Login"} handleClick={showLoginForm} /></li>
-            <li><Button name={"Register"} handleClick={showRegistrationForm}/></li>
+            {!user && <li><Button name={"Login"} handleClick={showLoginForm} /></li>}
+            {!user && <li><Button name={"Register"} handleClick={showRegistrationForm}/></li>}
         </ul>
     );
 }
