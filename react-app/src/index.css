@@ -1,14 +1,14 @@
-.main{
+.main {
   overflow-x: hidden;
 }
 
-h1{
+h1 {
   margin-top: 30px !important;
   margin-bottom: 20px !important;
   text-align: center;
 }
 
-label{
+label {
   width: 100%;
   font-size: 17px;
   padding: 9px 9px 9px 0;
@@ -26,7 +26,8 @@ input {
 }
 
 .saveButton {
-  background-color: rgb(94, 180, 148); /* Green */
+  background-color: rgb(94, 180, 148);
+  /* Green */
   border: none;
   color: white;
   padding: 10px 32px;
@@ -38,7 +39,7 @@ input {
   border-radius: 3px;
 }
 
-.saveButton:hover{
+.saveButton:hover {
   background-color: rgb(72, 157, 126);
 }
 
@@ -66,4 +67,38 @@ li button {
 
 li button:hover {
   background-color: #817d7d;
+}
+
+#users {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#users td,
+#users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#users tr:hover {
+  background-color: #ddd;
+}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #948f8f;
+  color: white;
+}
+
+.table-div{
+  overflow-x: auto;
+  margin-left: 60px;
+  margin-right: 60px;
 }
