@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.EditUserDTO;
+import com.example.demo.dto.NewUserDTO;
 import com.example.demo.model.User;
 import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,5 +33,16 @@ public class UserController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         return new ResponseEntity<>(user, HttpStatus.OK);
+    }
+
+    @DeleteMapping(path = "/{id}")
+    public ResponseEntity<?> delete(@PathVariable Long id){
+        userService.delete(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @PostMapping
+    public ResponseEntity<?> register(@RequestBody NewUserDTO newUser){
+        return new ResponseEntity<>(userService.register(newUser), HttpStatus.OK);
     }
 }

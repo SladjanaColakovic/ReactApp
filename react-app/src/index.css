@@ -27,7 +27,6 @@ input {
 
 .saveButton {
   background-color: rgb(94, 180, 148);
-  /* Green */
   border: none;
   color: white;
   padding: 10px 32px;
@@ -79,6 +78,7 @@ li button:hover {
 #users th {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: left;
 }
 
 #users tr:nth-child(even) {
@@ -101,4 +101,21 @@ li button:hover {
   overflow-x: auto;
   margin-left: 60px;
   margin-right: 60px;
+}
+
+.deleteButton {
+  background-color: rgb(201, 131, 125);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.deleteButton:hover {
+  background-color: rgb(202, 113, 105);
 }
