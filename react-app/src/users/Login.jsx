@@ -4,6 +4,7 @@ import Button from "../components/Button";
 import customAxios from "../http/customAxios";
 import { useDispatch } from "react-redux";
 import { login } from "../auth/userSlice";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
@@ -11,6 +12,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleLogin = () => {
         const data = {
@@ -28,6 +30,7 @@ const Login = () => {
                     id: obj.id,
                     loggedIn: true
                 }))
+                navigate('/', {replace: true})
             })
             .catch((error) => {
                 console.log(error.message)

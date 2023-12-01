@@ -26,13 +26,14 @@ input {
 }
 
 .saveButton {
+  margin: auto;
+  display: flex;
   background-color: rgb(94, 180, 148);
   border: none;
   color: white;
   padding: 10px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin-top: 10px;
   border-radius: 3px;
@@ -97,7 +98,7 @@ li button:hover {
   color: white;
 }
 
-.table-div{
+.table-div {
   overflow-x: auto;
   margin-left: 60px;
   margin-right: 60px;
